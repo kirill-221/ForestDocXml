@@ -23,6 +23,10 @@ function initSlider() {
         (slider.clientWidth - (slidesToShow - 1) * gap) / slidesToShow;
     const slidesCount = slides.length;
 
+    const setPosition = () => {
+        slidesContainer.style.transform = `translateX(${position}px)`;
+    };
+
     function changeWidth() {
         slides.forEach((slide) => {
             slide.style.minWidth = `${slideWidth}px`;
@@ -40,12 +44,9 @@ function initSlider() {
         });
     }
     changeWidth();
+    setPosition();
 
     window.addEventListener('resize', initSlider);
-
-    const setPosition = () => {
-        slidesContainer.style.transform = `translateX(${position}px)`;
-    };
 
     const checkButtons = () => {
         buttonPrev.disabled = position === 0;
