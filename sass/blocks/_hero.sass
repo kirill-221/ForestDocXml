@@ -1,6 +1,9 @@
 .hero
     background: url('../img/hero_background.jpg') center no-repeat
     background-size: 100% 100%
+    background-attachment: fixed
+    &--thanks
+        height: 100vh
     &-wrapper   
         display: flex
         padding-top: 147px
@@ -12,11 +15,10 @@
         max-width: 529px
     &__title
         margin: 0
-        font: 72px/130% 'Righteous', sans-serif
+        font: 68px/130% 'Righteous', sans-serif
         color: $light
     &__description
         font: 500 20px/180% 'Urbanist', sans-serif
-        text-transform: capitalize
         margin-top: 32px
         margin-bottom: 64px
         color: $text
@@ -28,6 +30,26 @@
         cursor: pointer
         right: 10%
         bottom: 25%
+    &__back
+        background-color: rgba(48, 47, 15, 0.401)
+        background-blend-mode: multiply
+    &-thanks
+        display: flex
+        align-items: center
+        justify-content: center
+        padding-top: 300px
+        padding-bottom: 170px
+        &__about
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__title
+            font: 58px/120% "Righteous",sans-serif
+            text-align: center
+            color: $light
+        &__button
+            padding: 24px
+            max-width: 300px  
 .header
     background: #272523
     &-wrapper
@@ -52,7 +74,7 @@
         display: flex
         justify-content: space-between
         align-items: center
-        width: 417px
+        width: 558px
     &__link
         font: 18px/22px 'Inter', sans-serif
         text-decoration: none
@@ -76,6 +98,14 @@
         width: 100%
         overflow: scroll
         transition: 300ms linear
+        &--visible
+            display: flex
+            align-items: center
+            flex-direction: column
+            justify-content: center
+            padding: 65px 0
+            margin: 0
+            z-index: 99
     &-menu
         display: none
         &__line
@@ -85,3 +115,7 @@
 .menu
     display: flex
     justify-content: space-between
+
+.logo
+    width: 50px
+    height: 50px

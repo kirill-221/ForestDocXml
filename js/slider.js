@@ -18,7 +18,6 @@ function initSlider() {
     const buttonNext = document.querySelector('.button__type--next');
     let scrolledSlides = document.querySelector('.js-scrolled-slides');
 
-    console.log(slidesToShow);
     let slideWidth =
         (slider.clientWidth - (slidesToShow - 1) * gap) / slidesToShow;
     const slidesCount = slides.length;
@@ -71,7 +70,7 @@ function initSlider() {
                 : unscrolledSlidesCount * (slideWidth + gap);
         setPosition();
         checkButtons();
-        console.log('prev');
+
         if (slidesToShow === 1) {
             scrolledSlides.textContent =
                 unscrolledSlidesCount + slidesToScroll - 1;
@@ -92,7 +91,6 @@ function initSlider() {
 
         setPosition();
         checkButtons();
-        console.log('next');
 
         const allSlides = slides.length;
         scrolledSlides.textContent =

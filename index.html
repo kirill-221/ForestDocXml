@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>CoffeeShop</title>
+        <title>ForestDocXML</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        <div class="hero">
+        <div id="start" class="hero hero__back">
             <header class="header header-mobile--fixed">
                 <div class="header-wrapper">
                     <div
@@ -24,16 +24,17 @@
                         data-aos-delay="100"
                     >
                         <a href="#" class="navbar__link navbar__link--active"
-                            >Home</a
+                            >Главная</a
                         >
-                        <a href="#" class="navbar__link">About</a>
-                        <a href="#" class="navbar__link">Menu</a>
-                        <a href="#" class="navbar__link">Reservation</a>
+                        <a href="#process" class="navbar__link"
+                            >Как это работает</a
+                        >
+                        <a href="#history" class="navbar__link">О нас</a>
                     </div>
                     <img
-                        src="./img/logo.svg"
+                        src="./img/logo.png"
                         alt="Image: Logo"
-                        class="header__logo"
+                        class="logo header__logo"
                         data-aos="fade-up"
                         data-aos-delay="300"
                     />
@@ -42,23 +43,11 @@
                         data-aos="fade-up"
                         data-aos-delay="500"
                     >
-                        <a href="#" class="navbar__link">Pages</a>
-                        <a href="#" class="navbar__link">Shop</a>
-                        <a href="#" class="navbar__link">Contact</a>
-                        <a href="#" class="navbar__link">
-                            <img
-                                src="./img/navbar_search.svg"
-                                alt="Icon: Search"
-                                class="navbar__icon"
-                            />
-                        </a>
-                        <a href="#" class="navbar__link">
-                            <img
-                                src="./img/navbar_shopping_bag.svg"
-                                alt="Icon: Shopping bag"
-                                class="navbar__icon"
-                            />
-                        </a>
+                        <a href="#feedback" class="navbar__link"
+                            >Отзывы клиентов</a
+                        >
+                        <a href="#contacts" class="navbar__link">Контакты</a>
+                        <a href="#news" class="navbar__link">Новости</a>
                     </div>
                     <div class="navbar-menu">
                         <span class="navbar-menu__line"></span>
@@ -66,29 +55,30 @@
                         <span class="navbar-menu__line"></span>
                     </div>
                     <div class="navbar-mobile">
-                        <a href="#" class="navbar__link navbar__link--active"
-                            >Home</a
+                        <a href="#start" class="navbar__link">Главная</a>
+                        <a
+                            href="#process"
+                            class="navbar__link navbar__link--close"
+                            >Как это работает</a
                         >
-                        <a href="#" class="navbar__link">About</a>
-                        <a href="#" class="navbar__link">Menu</a>
-                        <a href="#" class="navbar__link">Reservation</a>
-                        <a href="#" class="navbar__link">Pages</a>
-                        <a href="#" class="navbar__link">Shop</a>
-                        <a href="#" class="navbar__link">Contact</a>
-                        <a href="#" class="navbar__link">
-                            <img
-                                src="./img/navbar_search.svg"
-                                alt="Icon: Search"
-                                class="navbar__icon"
-                            />
-                        </a>
-                        <a href="#" class="navbar__link">
-                            <img
-                                src="./img/navbar_shopping_bag.svg"
-                                alt="Icon: Shopping bag"
-                                class="navbar__icon"
-                            />
-                        </a>
+                        <a
+                            href="#history"
+                            class="navbar__link navbar__link--close"
+                            >О нас</a
+                        >
+                        <a
+                            href="#feedback"
+                            class="navbar__link navbar__link--close"
+                            >Отзывы клиентов</a
+                        >
+                        <a
+                            href="#contacts"
+                            class="navbar__link navbar__link--close"
+                            >Контакты</a
+                        >
+                        <a href="#news" class="navbar__link navbar__link--close"
+                            >Последние новости</a
+                        >
                     </div>
                 </div>
             </header>
@@ -99,19 +89,24 @@
                         data-aos="fade-up"
                         data-aos-delay="100"
                     >
-                        <h1 class="hero__title">Enjoy Your Morning Coffee.</h1>
+                        <h1 class="hero__title">
+                            Преобразуйте свои лесные декларации.
+                        </h1>
                         <p class="hero__description">
-                            The coofee is brewed by fist roasting the green
-                            coffee beans over hot coals in brazier. given to
-                            Opportunity
+                            Наш инновационный инструмент преобразует лесные
+                            декларации в формат XML легко и с большой точностью.
                         </p>
-                        <button class="button hero__button">Test Coffee</button>
+                        <a href="declaration.html" class="hero-wrapper__link">
+                            <button class="button hero__button">
+                                Попробовать
+                            </button>
+                        </a>
                     </div>
                     <a
                         data-aos="fade-bottom"
                         data-aos-delay="300"
                         data-fancybox
-                        href="https://www.youtube.com/watch?v=KVirEDw-MRs"
+                        href="https://www.youtube.com/watch?v=ow_9Ka64OP8&t=40s"
                         class="hero__play"
                     >
                         <img src="./img/play.png" alt="Icon: Play" />
@@ -121,7 +116,7 @@
             <!-- /.container -->
         </div>
         <div class="container">
-            <div class="process">
+            <div id="process" class="process">
                 <div class="process__item">
                     <h3
                         class="process__title"
@@ -129,10 +124,10 @@
                         data-aos-delay="100"
                     >
                         01
-                        <span class="process__text">Best Coffee Flavour</span>
+                        <span class="process__text">Введите свои данные</span>
                     </h3>
                     <img
-                        src="./img/cup_coffee_1.jpg"
+                        src="./img/image_1.jpeg"
                         alt="Image: process"
                         class="process__image"
                     />
@@ -144,10 +139,10 @@
                         data-aos-delay="300"
                     >
                         02
-                        <span class="process__text">Place to get lost</span>
+                        <span class="process__text">Сохраните свои данные</span>
                     </h3>
                     <img
-                        src="./img/cup_coffee_2.jpg"
+                        src="./img/image_2.jpg"
                         alt="Image: process"
                         class="process__image"
                     />
@@ -159,186 +154,62 @@
                         data-aos-delay="500"
                     >
                         03
-                        <span class="process__text">Proper roesting</span>
+                        <span class="process__text"
+                            >Получите готовый xml файл</span
+                        >
                     </h3>
                     <img
-                        src="./img/cup_coffee_3.jpg"
+                        src="./img/image_3.jpg"
                         alt="Image: process"
                         class="process__image process__image--mobile"
                     />
                 </div>
             </div>
             <!-- /.process -->
-            <div class="history">
+            <div id="history" class="history">
                 <div
                     class="history__item"
                     data-aos="fade-up"
                     data-aos-delay="100"
                 >
                     <img
-                        src="./img/cup_coffee_2.jpg"
+                        src="./img/company_1.jpg"
                         alt="Photo: Coffee"
                         class="history__image"
                     />
                     <img
-                        src="./img/cup_coffee_1.jpg"
+                        src="./img/company_2.jpg"
                         alt="Photo: Coffee"
                         class="history__image"
                     />
                 </div>
-                <div
-                    class="history__item history__item--mobile"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                >
-                    <img
-                        src="./img/cup_coffee_4.png"
-                        alt="Photo: Coffee"
-                        class="history__img"
-                    />
-                </div>
+
                 <div
                     class="history-about"
                     data-aos="fade-down"
                     data-aos-delay="500"
                 >
                     <span class="block-subtitle history-about__subtitle"
-                        >Our history</span
+                        >О нашей компании</span
                     >
                     <h2 class="block-title history-about__title">
-                        Create a <br />
-                        new story with us
+                        ForestDocXML Разработка веб-приложения <br />
                     </h2>
                     <p class="history-about__text">
-                        mauris rhoncus in imperdiet placerat. vestibu emismd
-                        nisl suscirpit ligula volutpat, a feyguat urn maxmaus.
-                        cars massa nibhtincidunt. donec et nibh maximus, est eu,
-                        mattis nuce. preasent ut quam quis quam venen atis
-                        fringilla. morbi vastibulum id tells mmodo mattis.
-                        aliauam erat volutpal.
+                        Мы являемся командой компьютерных специалистов, которые
+                        занимаются разработкой веб-приложения по подаче лесной
+                        декларации в XML формате. Наше приложение предоставляет
+                        удобный и быстрый способ для оформления документов,
+                        необходимых для лесоразведения и лесопользования. С
+                        помощью нашего приложения вы можете быстро и без ошибок
+                        оформлять декларации в соответствии с требованиями
+                        законодательства.
                     </p>
                 </div>
             </div>
             <!-- /.history -->
-            <div class="product">
-                <div class="product-titles">
-                    <span class="block-subtitle product-titles__subtitle"
-                        >Popular Product</span
-                    >
-                    <h2 class="block-title product-titles__title">
-                        Coffee popular Product
-                    </h2>
-                </div>
-                <div class="product__block">
-                    <div class="product-item">
-                        <img
-                            src="./img/product_image.jpg"
-                            alt=""
-                            class="product-item__image"
-                        />
-                        <h3 class="product-item__title">brazil coffee gred</h3>
-                        <button class="button product-item__button">
-                            Add to cart
-                            <img
-                                src="./img/navbar_shopping_bag.svg"
-                                alt="Icon: Shopping"
-                                class="product-item__icon"
-                            />
-                        </button>
-                    </div>
-                    <div class="product-item">
-                        <img
-                            src="./img/product_image.jpg"
-                            alt=""
-                            class="product-item__image"
-                        />
-                        <div class="product-item__rating">
-                            <span class="product-item__name">Coffee</span>
-                            <img
-                                src="./img/icon_star.svg"
-                                alt="Icon: Star"
-                                class="product-item__star"
-                            />
-                            <img
-                                src="./img/icon_star.svg"
-                                alt="Icon: Star"
-                                class="product-item__star"
-                            />
-                            <img
-                                src="./img/icon_star.svg"
-                                alt="Icon: Star"
-                                class="product-item__star"
-                            />
-                            <img
-                                src="./img/icon_star.svg"
-                                alt="Icon: Star"
-                                class="product-item__star"
-                            />
-                            <img
-                                src="./img/icon_background_star.svg"
-                                alt="Icon: Star"
-                                class="product-item__star"
-                            />
-                        </div>
-                        <h3 class="product-item__title">brazil coffee gred</h3>
-                        <span class="product-item__price"
-                            >Price -
-                            <span
-                                class="product-item__price product-item__price--background"
-                                >$320.00/</span
-                            >
-                            $358
-                        </span>
-                    </div>
-                    <div class="product-item">
-                        <img
-                            src="./img/product_image.jpg"
-                            alt=""
-                            class="product-item__image"
-                        />
-                        <div class="product-item__rating">
-                            <span class="product-item__name">Coffee</span>
-                            <img
-                                src="./img/icon_star.svg"
-                                alt="Icon: Star"
-                                class="product-item__star"
-                            />
-                            <img
-                                src="./img/icon_star.svg"
-                                alt="Icon: Star"
-                                class="product-item__star"
-                            />
-                            <img
-                                src="./img/icon_star.svg"
-                                alt="Icon: Star"
-                                class="product-item__star"
-                            />
-                            <img
-                                src="./img/icon_star.svg"
-                                alt="Icon: Star"
-                                class="product-item__star"
-                            />
-                            <img
-                                src="./img/icon_background_star.svg"
-                                alt="Icon: Star"
-                                class="product-item__star"
-                            />
-                        </div>
-                        <h3 class="product-item__title">brazil coffee gred</h3>
-                        <span class="product-item__price"
-                            >Price -
-                            <span
-                                class="product-item__price product-item__price--background"
-                                >$320.00/</span
-                            >
-                            $358
-                        </span>
-                    </div>
-                </div>
-                <button class="button product__button">View all product</button>
-            </div>
-            <!-- /.product -->
             <div
+                id="sta"
                 class="sta"
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
@@ -346,160 +217,42 @@
             >
                 <div class="action">
                     <img
-                        src="./img/action_image.png"
-                        alt="Image: Coffee M"
+                        src="./img/product_image.jpg"
+                        alt="Image: Online forest declaration"
                         class="action__image"
                     />
                     <div class="action__item">
                         <h2 class="block-title action__title">
-                            Coffee<br />
-                            machine, buy for home
+                            ForestDocXML<br />
                         </h2>
                         <p class="action__text">
-                            mauris rhoncus in imperdiet placerat. vestibu emismd
-                            nisl suscirpit ligula volutpat, a feyguat urn
-                            maxmaus. cars massa nibhtincidunt. donec et nib
-                            maximus, est eu, mattis nuce. preasent ut quam quis
-                            quam venen atis fri ngilla. morbi vastibulum id
-                            tells mmodo mattis. aliauam erat volutpal.
+                            Наше онлайн-приложение поможет вашей компании
+                            значительно ускорить и улучшить процесс подачи
+                            деклараций для лесоразведения и лесопользования. Мы
+                            предоставляем удобный и быстрый способ для
+                            оформления документов, всегда соответствующих свежим
+                            требованиям законодательства. Мы гарантируем, что
+                            наше приложение использует самые передовые
+                            технологии и инструменты для обеспечения высочайшего
+                            качества и безопасности вашей информации.
                         </p>
-                        <button class="button action__button">
-                            Discover now
-                        </button>
+                        <a href="declaration.html" class="sta__link">
+                            <button class="button action__button">
+                                Попробовать
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <!-- /.action -->
             </div>
             <!-- /.sta -->
-            <div class="menu">
-                <div class="menu-titles">
-                    <span class="block-subtitle menu-titles__subtitle"
-                        >Menu</span
-                    >
-                    <h2 class="block-title menu-titles__title">
-                        Coffee popular menu
-                    </h2>
-                </div>
-                <div
-                    class="menu-offer"
-                    data-aos="fade-down"
-                    data-aos-easing="linear"
-                    data-aos-duration="1000"
-                >
-                    <div class="menu-offer__item">
-                        <img
-                            src="./img/menu_image_1.png"
-                            alt="Image: Coffee"
-                            class="menu-offer__image"
-                        />
-                        <div class="menu-offer__text">
-                            <span class="menu-offer__title"
-                                >Americano rosted gred</span
-                            >
-                            <span class="menu-offer__price">$12:00</span>
-                        </div>
-                    </div>
-                    <div class="menu-offer__item">
-                        <img
-                            src="./img/menu_image_2_4_8.png"
-                            alt="Image: Coffee"
-                            class="menu-offer__image"
-                        />
-                        <div class="menu-offer__text">
-                            <span class="menu-offer__title"
-                                >Americano rosted gred</span
-                            >
-                            <span class="menu-offer__price">$12:00</span>
-                        </div>
-                    </div>
-                    <div class="menu-offer__item">
-                        <img
-                            src="./img/menu_image_3.png"
-                            alt="Image: Coffee"
-                            class="menu-offer__image"
-                        />
-                        <div class="menu-offer__text">
-                            <span class="menu-offer__title"
-                                >Americano rosted gred</span
-                            >
-                            <span class="menu-offer__price">$12:00</span>
-                        </div>
-                    </div>
-                    <div class="menu-offer__item">
-                        <img
-                            src="./img/menu_image_2_4_8.png"
-                            alt="Image: Coffee"
-                            class="menu-offer__image"
-                        />
-                        <div class="menu-offer__text">
-                            <span class="menu-offer__title"
-                                >Americano rosted gred</span
-                            >
-                            <span class="menu-offer__price">$12:00</span>
-                        </div>
-                    </div>
-                    <div class="menu-offer__item">
-                        <img
-                            src="./img/menu_image_5.png"
-                            alt="Image: Coffee"
-                            class="menu-offer__image"
-                        />
-                        <div class="menu-offer__text">
-                            <span class="menu-offer__title"
-                                >Americano rosted gred</span
-                            >
-                            <span class="menu-offer__price">$12:00</span>
-                        </div>
-                    </div>
-                    <div class="menu-offer__item">
-                        <img
-                            src="./img/menu_image_6.png"
-                            alt="Image: Coffee"
-                            class="menu-offer__image"
-                        />
-                        <div class="menu-offer__text">
-                            <span class="menu-offer__title"
-                                >Americano rosted gred</span
-                            >
-                            <span class="menu-offer__price">$12:00</span>
-                        </div>
-                    </div>
-                    <div class="menu-offer__item">
-                        <img
-                            src="./img/menu_image_7.png"
-                            alt="Image: Coffee"
-                            class="menu-offer__image"
-                        />
-                        <div class="menu-offer__text">
-                            <span class="menu-offer__title"
-                                >Americano rosted gred</span
-                            >
-                            <span class="menu-offer__price">$12:00</span>
-                        </div>
-                    </div>
-                    <div class="menu-offer__item">
-                        <img
-                            src="./img/menu_image_2_4_8.png"
-                            alt="Image: Coffee"
-                            class="menu-offer__image"
-                        />
-                        <div class="menu-offer__text">
-                            <span class="menu-offer__title"
-                                >Americano rosted gred</span
-                            >
-                            <span class="menu-offer__price">$12:00</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /.menu -->
-            <div class="feedback">
+            <div id="feedback" class="feedback">
                 <div class="feedback-titles">
                     <span class="block-subtitle feedback-titles__subtitle"
-                        >Testimonial</span
+                        >Отзывы</span
                     >
                     <h3 class="block-title feedback-titles__title">
-                        Says our customers
+                        Говорят наши клиенты
                     </h3>
                 </div>
                 <div class="slider">
@@ -516,45 +269,48 @@
                                     class="slider__image"
                                 />
                                 <p class="slider__text">
-                                    Education WP is a special build for
-                                    effective education & Learning Management
-                                    System site. Education WP is the next
-                                    generation & one of the best education
-                                    WordPress themes which all the strength of
-                                    eLearning WP..
+                                    "Это приложение просто спасло нашу компанию!
+                                    Мы больше не тратим драгоценное время на
+                                    оформление бумажных документов и сэкономили
+                                    много ресурсов благодаря быстрой отправке
+                                    деклараций в XML формате."
                                 </p>
                             </div>
-                            <span class="slider__author">John Smith</span>
-                            <div class="slider__rating">
-                                <span class="slider__post"
-                                    >Product Designer</span
+                            <div class="slider__block">
+                                <span class="slider__author"
+                                    >Андрей Кузнецов</span
                                 >
-                                <div class="slider__stars">
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
+                                <div class="slider__rating">
+                                    <span class="slider__post"
+                                        >Менеджер продукта</span
+                                    >
+                                    <div class="slider__stars">
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -570,245 +326,255 @@
                                     class="slider__image"
                                 />
                                 <p class="slider__text">
-                                    Education WP is a special build for
-                                    effective education & Learning Management
-                                    System site. Education WP is the next
-                                    generation & one of the best education
-                                    WordPress themes which all the strength of
-                                    eLearning WP..
+                                    "Очень удобное и интуитивно понятное
+                                    приложение! Я могу быстро заполнить все
+                                    необходимые поля и отправить документы за
+                                    считанные минуты."
                                 </p>
                             </div>
-                            <span class="slider__author">Brett Lee</span>
-                            <div class="slider__rating">
-                                <span class="slider__post"
-                                    >User Experience Designer</span
+                            <div class="slider__block">
+                                <span class="slider__author"
+                                    >Ольга Иванова</span
                                 >
-                                <div class="slider__stars">
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
+                                <div class="slider__rating">
+                                    <span class="slider__post"
+                                        >Предприниматель</span
+                                    >
+                                    <div class="slider__stars">
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="slider__slide">
                             <div class="slider__user">
                                 <img
-                                    src="./img/slider_user.png"
+                                    src="./img/user_3.jpg"
                                     alt=""
                                     class="slider__image"
                                 />
                                 <p class="slider__text">
-                                    Education WP is a special build for
-                                    effective education & Learning Management
-                                    System site. Education WP is the next
-                                    generation & one of the best education
-                                    WordPress themes which all the strength of
-                                    eLearning WP..
+                                    "Отличный сервис, который освободил меня от
+                                    головной боли, связанной с оформлением
+                                    деклараций. Приложение упрощает процесс и
+                                    дает мне возможность фокусироваться на своих
+                                    бизнес-задачах."
                                 </p>
                             </div>
-                            <span class="slider__author">John Smith</span>
-                            <div class="slider__rating">
-                                <span class="slider__post"
-                                    >Product Designer</span
+                            <div class="slider__block">
+                                <span class="slider__author"
+                                    >Никита Петров</span
                                 >
-                                <div class="slider__stars">
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
+                                <div class="slider__rating">
+                                    <span class="slider__post"
+                                        >Менеджер продукта</span
+                                    >
+                                    <div class="slider__stars">
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="slider__slide">
                             <div class="slider__user">
                                 <img
-                                    src="./img/slider_image_2.png"
+                                    src="./img/user_4.jpg"
                                     alt=""
                                     class="slider__image"
                                 />
                                 <p class="slider__text">
-                                    Education WP is a special build for
-                                    effective education & Learning Management
-                                    System site. Education WP is the next
-                                    generation & one of the best education
-                                    WordPress themes which all the strength of
-                                    eLearning WP..
+                                    "Я не сильна в вопросах технологий, но это
+                                    приложение было достаточно простым для меня,
+                                    чтобы использовать его без напряжения.
+                                    Получается, что я сделала все сама!"
                                 </p>
                             </div>
-                            <span class="slider__author">John Smith</span>
-                            <div class="slider__rating">
-                                <span class="slider__post"
-                                    >Product Designer</span
+                            <div class="slider__block">
+                                <span class="slider__author"
+                                    >Екатерина Смирнова</span
                                 >
-                                <div class="slider__stars">
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
+                                <div class="slider__rating">
+                                    <span class="slider__post">Юрист</span>
+                                    <div class="slider__stars">
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="slider__slide">
                             <div class="slider__user">
                                 <img
-                                    src="./img/slider_user.png"
+                                    src="./img/user_5.jpg"
                                     alt=""
                                     class="slider__image"
                                 />
                                 <p class="slider__text">
-                                    Education WP is a special build for
-                                    effective education & Learning Management
-                                    System site. Education WP is the next
-                                    generation & one of the best education
-                                    WordPress themes which all the strength of
-                                    eLearning WP..
+                                    "Очень импонирует, что разработчики не
+                                    остались на месте, а продолжают улучшать
+                                    интерфейс и функциональность приложения. Я
+                                    ощущаю, что моя работа стала еще более
+                                    эффективной благодаря обновлениям."
                                 </p>
                             </div>
-                            <span class="slider__author">John Smith</span>
-                            <div class="slider__rating">
-                                <span class="slider__post"
-                                    >Product Designer</span
-                                >
-                                <div class="slider__stars">
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
+                            <div class="slider__block">
+                                <span class="slider__author">Денис Волков</span>
+                                <div class="slider__rating">
+                                    <span class="slider__post"
+                                        >Предприниматель</span
+                                    >
+                                    <div class="slider__stars">
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="slider__slide">
                             <div class="slider__user">
                                 <img
-                                    src="./img/slider_image_2.png"
+                                    src="../img/user_6.jpg"
                                     alt=""
                                     class="slider__image"
                                 />
                                 <p class="slider__text">
-                                    Education WP is a special build for
-                                    effective education & Learning Management
-                                    System site. Education WP is the next
-                                    generation & one of the best education
-                                    WordPress themes which all the strength of
-                                    eLearning WP..
+                                    "Я очень довольна, что оформление деклараций
+                                    теперь стало проще и более безопасным
+                                    благодаря использованию данного приложения.
+                                    Оно рекомендуется всем, кто хочет сократить
+                                    временные и финансовые затраты на этот
+                                    процесс."
                                 </p>
                             </div>
-                            <span class="slider__author">John Smith</span>
-                            <div class="slider__rating">
-                                <span class="slider__post"
-                                    >Product Designer</span
+                            <div class="slider__block">
+                                <span class="slider__author"
+                                    >Анастасия Михайлова</span
                                 >
-                                <div class="slider__stars">
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
-                                    <img
-                                        src="./img/slider_star.svg"
-                                        alt="Icon: star"
-                                        class="slider__star"
-                                    />
+                                <div class="slider__rating">
+                                    <span class="slider__post"
+                                        >Исполнительный директор</span
+                                    >
+                                    <div class="slider__stars">
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                        <img
+                                            src="./img/slider_star.svg"
+                                            alt="Icon: star"
+                                            class="slider__star"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -819,7 +585,7 @@
                         <span class="slider__count">
                             <span class="js-scrolled-slides">0</span>
                             <span>/</span>
-                            <span class="js-all-slides">6</span> People
+                            <span class="js-all-slides">6</span> Отзывы
                         </span>
                         <span class="slider__line">
                             <span class="slider__active"></span>
@@ -844,69 +610,76 @@
                 </div>
             </div>
             <!-- /.feedback -->
-            <div class="booking">
-                <iframe
-                    src="https://www.google.com/maps/d/u/0/embed?mid=1PoIFLBvCBw-Kn7iFHdXpxJdJ6ttiUKg&ehbc=2E312F"
-                    class="booking__map"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                ></iframe>
-                <div
-                    class="booking__contact-form"
-                    data-aos="fade-bottom"
-                    data-aos-delay="300"
+            <section id="contacts" class="section section__3 contacts">
+                <span class="contacts__subtitle">Контакты</span>
+                <h2 class="contacts__title">Свяжитесь с нами</h2>
+                <ul class="contacts__list">
+                    <li class="contacts__item">Телефон: 8 (800) 621-51-82</li>
+                    <li class="contacts__item">
+                        Email: ForestDocXML-guide.com
+                    </li>
+                    <li class="contacts__item">
+                        Адрес: г. Йошкар-Ола, ул. Волкова, д.149
+                    </li>
+                </ul>
+                <form
+                    id="contact-form"
+                    action="send.php"
+                    method="POST"
+                    class="contact-form"
                 >
-                    <span class="block-subtitle booking__contact-subtitle"
-                        >Reservation</span
-                    >
-                    <h2 class="block-title booking__contact-title">
-                        Booking a table
-                    </h2>
-                    <form
-                        action="#"
-                        method="post"
-                        novalidate
-                        class="booking__form"
-                    >
+                    <h3 class="form__title form__title--mb-3">
+                        Отправьте нам сообщение
+                    </h3>
+                    <div class="contacts__input-group">
                         <input
                             type="text"
-                            class="booking__input"
-                            placeholder="4 person"
+                            class="input contacts__input"
+                            placeholder="Ваше полное имя*"
+                            name="name"
                             required
+                            pattern="^[a-zA-Z][a-zA-Z\- ]*$"
+                            title="Пожалуйста, введите только символы алфавита без начальных пробелов, цифр и других специальных символов, кроме дефисов."
                         />
+                    </div>
+                    <div class="contacts__input-group">
                         <input
-                            type="text"
-                            class="booking__input"
-                            placeholder="12.25, 2020"
+                            type="tel"
+                            class="input contacts__input phone__input"
+                            placeholder="Номер телефона*"
+                            name="phone"
                             required
+                            id="phone"
                         />
-                        <input
-                            type="text"
-                            class="booking__input"
-                            placeholder="11:00 AM"
-                            required
-                        />
-                        <button type="button" class="button booking__button">
-                            BOOK S TABLE
-                        </button>
-                    </form>
-                </div>
-            </div>
-            <!-- /.booking -->
-            <div class="testimonial">
+                    </div>
+                    <textarea
+                        class="message form__message"
+                        cols="30"
+                        rows="5"
+                        placeholder="Сообщение"
+                        name="message"
+                    ></textarea>
+                    <button class="button form__button" type="submit">
+                        Отправить
+                    </button>
+                    <span class="form__info">* Обязательные поля</span>
+                </form>
+            </section>
+            <!-- /.contacts -->
+            <div id="news" class="testimonial">
                 <div class="testimonial-titles">
                     <span class="block-subtitle testimonial-titles__subtitle"
-                        >Testimonial</span
+                        >Рекомендации</span
                     >
-                    <h2 class="block-title testimonial-titles__title">
-                        Our latest news
+                    <h2 class="testimonial-titles__title">
+                        Последние важные новости
                     </h2>
                 </div>
                 <div class="testimonial__about">
                     <div class="testimonial-item">
                         <img
-                            src="./img/test_image_1.png"
-                            alt="Image: Cup Coffee"
+                            src="./img/news_image_1.jpg"
+                            alt="Image: News"
                             class="testimonial-item__image"
                         />
                         <div class="testimonial-item__info">
@@ -914,23 +687,28 @@
                                 <span
                                     class="testimonial-item__author testimonial-item__author--color"
                                 >
-                                    By:
+                                    Автор:
                                     <span class="testimonial-item__author"
-                                        >rasaline</span
-                                    >
+                                        >Минприроды России
+                                    </span>
                                 </span>
                                 <span class="testimonial-item__date"
-                                    >23.01.2021</span
+                                    >25.02.2022</span
                                 >
                             </div>
-                            <span class="testimonial-item__description"
-                                >Ideal cocktails from barmen....</span
-                            >
-                            <a href="#" class="testimonial-item__link"
-                                >Read More
+                            <div class="testimonial-item__block">
+                                <span class="testimonial-item__description"
+                                    >С 1 марта 2023 года лесная декларация
+                                    подаётся....</span
+                                >
+                            </div>
+                            <a
+                                href="https://kamgov.ru/agles/news/s-1-marta-lesnaa-deklaracia-podaetsa-isklucitelno-v-formate-xml-shemy-48685"
+                                class="testimonial-item__link"
+                                >Подробнее
                                 <img
                                     src="./img/test_arrow_icon.svg"
-                                    alt=""
+                                    alt="Image: News"
                                     class="testimonial-item__icon"
                                 />
                             </a>
@@ -938,8 +716,8 @@
                     </div>
                     <div class="testimonial-item">
                         <img
-                            src="./img/test_image_2.png"
-                            alt="Image: Cup Coffee"
+                            src="./img/news_image_2.png"
+                            alt="Image: News"
                             class="testimonial-item__image"
                         />
                         <div class="testimonial-item__info">
@@ -947,32 +725,37 @@
                                 <span
                                     class="testimonial-item__author testimonial-item__author--color"
                                 >
-                                    By:
+                                    Автор:
                                     <span class="testimonial-item__author"
-                                        >rasaline</span
+                                        >Правительство РФ</span
                                     >
                                 </span>
                                 <span class="testimonial-item__date"
-                                    >23.01.2021</span
+                                    >02.09.2022</span
                                 >
                             </div>
-                            <span class="testimonial-item__description"
-                                >Ideal cocktails from barmen....</span
-                            >
-                            <a href="#" class="testimonial-item__link"
-                                >Read More
-                                <img
-                                    src="./img/test_arrow_icon.svg"
-                                    alt=""
-                                    class="testimonial-item__icon"
-                                />
-                            </a>
+                            <div class="testimonial-item__block">
+                                <span class="testimonial-item__description"
+                                    >Об утверждении Правил представления
+                                    информации....</span
+                                >
+                                <a
+                                    href="https://www.consultant.ru/law/hotdocs/76988.html"
+                                    class="testimonial-item__link"
+                                    >Подробнее
+                                    <img
+                                        src="./img/test_arrow_icon.svg"
+                                        alt=""
+                                        class="testimonial-item__icon"
+                                    />
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="testimonial-item testimonial-item--mobile">
                         <img
-                            src="./img/test_image_3.png"
-                            alt="Image: Cup Coffee"
+                            src="./img/news_image_1.jpg"
+                            alt="Image: News"
                             class="testimonial-item__image"
                         />
                         <div class="testimonial-item__info">
@@ -980,26 +763,31 @@
                                 <span
                                     class="testimonial-item__author testimonial-item__author--color"
                                 >
-                                    By:
+                                    Автор:
                                     <span class="testimonial-item__author"
-                                        >rasaline</span
+                                        >Минприроды России</span
                                     >
                                 </span>
                                 <span class="testimonial-item__date"
-                                    >23.01.2021</span
+                                    >11.01.2023</span
                                 >
                             </div>
-                            <span class="testimonial-item__description"
-                                >Ideal cocktails from barmen....</span
-                            >
-                            <a href="#" class="testimonial-item__link"
-                                >Read More
-                                <img
-                                    src="./img/test_arrow_icon.svg"
-                                    alt=""
-                                    class="testimonial-item__icon"
-                                />
-                            </a>
+                            <div class="testimonial-item__block">
+                                <span class="testimonial-item__description"
+                                    >С 1 марта 2023 года проект освоения лесов
+                                    будет оформляться....</span
+                                >
+                                <a
+                                    href="https://www.mnr.gov.ru/press/news/rosleskhoz_s_1_marta_2023_goda_proekt_osvoeniya_lesov_budet_oformlyatsya_v_elektronnom_vide/"
+                                    class="testimonial-item__link"
+                                    >Подробнее
+                                    <img
+                                        src="./img/test_arrow_icon.svg"
+                                        alt=""
+                                        class="testimonial-item__icon"
+                                    />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1007,9 +795,9 @@
             <!-- /.testimonial -->
             <footer class="footer">
                 <img
-                    src="./img/logo.svg"
+                    src="./img/logo.png"
                     alt="Icon: Logo"
-                    class="footer__logo"
+                    class="logo footer__logo"
                     data-aos="fade-up"
                     data-aos-delay="100"
                 />
@@ -1019,33 +807,21 @@
                     data-aos-delay="300"
                 >
                     <a href="#" class="footer__link footer__link--active"
-                        >Home</a
+                        >Главная</a
                     >
-                    <a href="#" class="footer__link">Rerervation</a>
-                    <a href="#" class="footer__link">Menu</a>
-                    <a href="#" class="footer__link">About</a>
-                    <a href="#" class="footer__link">Pages</a>
-                    <a href="#" class="footer__link">Shop</a>
-                    <a href="#" class="footer__link">Blogs</a>
+                    <a href="#process" class="footer__link">Как это работает</a>
+                    <a href="#history" class="footer__link">О нас</a>
+                    <a href="#feedback" class="footer__link">Отзывы клиентов</a>
+                    <a href="#contacts" class="footer__link">Контакты</a>
+                    <a href="#start" class="footer__link">В начало</a>
                 </div>
-                <div
-                    class="footer__enter"
+                <a
+                    href="#start"
+                    class="footer__link footer__link--active footer__link--back"
                     data-aos="fade-up"
                     data-aos-delay="500"
+                    >В начало</a
                 >
-                    <input
-                        type="text"
-                        class="footer__input"
-                        placeholder="Enter Your Email"
-                    />
-                    <button class="footer__input-button">
-                        <img
-                            src="./img/input_arrow.svg"
-                            alt="Icon: arrow"
-                            class="footer__input-arrow"
-                        />
-                    </button>
-                </div>
             </footer>
             <!-- /.footer -->
         </div>
@@ -1054,12 +830,13 @@
             <div class="container">
                 <div class="rights__block">
                     <span class="rights__text"
-                        >e-Tennis © 2021. All rights reserved.</span
+                        >ForestDocXML © 2023. Все права защищены.</span
                     >
                 </div>
             </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
@@ -1067,6 +844,7 @@
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
         <script src="./js/slider.js"></script>
         <script src="./js/aos.js"></script>
+        <script src="./js/burger.js"></script>
         <script src="./js/main.js"></script>
     </body>
 </html>

@@ -7,12 +7,17 @@
         align-items: center
         flex-direction: column
         margin-bottom: 56px
+        &__title
+            font: 48px/130% 'Righteous', sans-serif
+            color: $light
+            margin: 0
     &__about
         display: flex
         flex-wrap: wrap
     &-item
         display: flex
         flex-direction: column
+        justify-content: space-between
         max-width: 366px  
         margin-right: 36px
         &:hover
@@ -22,7 +27,7 @@
             margin-right: 0
         &__image
             max-width: 366px
-            max-height: 360px
+            object-fit: contain
         &__info
             display: flex
             flex-direction: column
@@ -43,7 +48,6 @@
             color: $light
         &__description
             font: 20px/150% 'Righteous', san-serif
-            text-transform: capitalize
             color: $light
             margin-top: 16px
         &__link
@@ -57,3 +61,6 @@
                 color: $light
         &__icon
             margin-left: 8px
+        &__block
+            display: flex
+            flex-direction: column

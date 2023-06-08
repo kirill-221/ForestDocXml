@@ -3,7 +3,7 @@
         &__left
             width: 350px
         &__right
-            width: 370px
+            width: 410px
     .header-wrapper
         max-width: 1100px
     .container
@@ -12,42 +12,19 @@
         &__item
             max-width: 290px
         &__title
-            font: 22px/30px 'Righteous', san-serif
+            font: 18px/22px 'Righteous', san-serif
     .history
         &-about
             max-width: 390px
             padding: 120px 45px
-        &__item
-            max-width: 245px
-    .product
-        &-item
-            margin-right: 20px
-            &__title
-                text-align: center
-        &__block
-            margin-bottom: 30px
     .action
         padding-left: 120px
         &__item
             max-width: 400px
-    .menu
-        &-offer
-            &__item
-                justify-content: unset
-                max-width: 440px
-            &__title
-                text-align: center
-                margin-bottom: 5px
-            &__text
-                flex-direction: column
+    
     .testimonial
         &-item
             max-width: 280px
-    .footer
-        &__nav
-            width: 470px
-        &__input
-            width: 280px
 @media (max-width: 992px)
     .container
         max-width: 700px
@@ -63,7 +40,7 @@
         &__left
             width: 290px
         &__right
-            width: 290px
+            width: 310px
         &__icon
             width: 25px
     .process
@@ -90,33 +67,17 @@
             margin-bottom: 30px
         &__item
             width: 100%
-            max-width: 320px
-    .product
-        padding-bottom: 100px
-        &__block
-            justify-content: center
-            flex-wrap: wrap
-        &-item
-            margin-right: unset
-            max-width: 310px
-            padding: 30px
-            &:first-child
-                margin-right: 35px
+        &__image
+            height: 300px
+            margin-bottom: 30px 
+    
     .action
         padding: 60px
         &__item
             max-width: 300px
         &__image
             max-width: 200px
-    .menu
-        &-offer
-            &__item
-                max-width: unset
-                justify-content: space-between
-                &:last-child
-                    margin-bottom: 0
-            &__text
-                flex-direction: unset        
+    
     .booking
         flex-direction: column-reverse
         padding-bottom: 70px
@@ -151,19 +112,8 @@
         padding-bottom: 40px
         &__logo
             width: 55px
-        &__nav
-            width: 400px
         &__link
             font: 500 16px/100% 'Urbanist', san-serif
-        &__input
-            padding-left: 15px
-            padding-right: 70px
-            width: 210px
-            &:placeholder
-            font: 500 14px/150% 'Urbanist', san-serif
-            &-button
-                width: 40px
-                height: 40px
 @media (max-width: 768px)
     .container
         width: 89%
@@ -179,6 +129,8 @@
             font: 63px/130% 'Righteous', sans-serif
         &__description
              font: 500 18px/180% 'Urbanist', sans-serif
+        &-thanks
+            padding-top: 450px
     .navbar
         &__left
             display: none
@@ -210,6 +162,8 @@
         &__link
             font: 25px/31px 'Inter', sans-serif
             margin-bottom: 15px
+            &--hide
+                display: none
         &__icon
             width: 55px
             height: 100%
@@ -236,33 +190,9 @@
         &__image
             max-height: 400px
     .history
-        &__item
-            max-width: 245px
         &__image
             max-height: 230px   
-    .product
-        padding-bottom: 70px
-        &__block
-            justify-content: unset
-        &-item
-            padding: 30px
-            max-width: unset
-            width: 100%
-            margin-bottom: 45px
-            &:first-child
-                margin-right: unset
-            &__image
-                width: 80%
-            &__title
-                font: 27px/32px 'Righteous', san-serif
-            &__name
-                font: 500 20px/22px 'Urbanist', san-serif
-            &__star
-                width: 25px
-            &__price
-                font: 600 21px/23px 'Urbanist', san-serif
-            &__button
-                padding: 15px 25px 15px 25px
+    
     .action
         padding: 35px
         flex-direction: column
@@ -272,10 +202,11 @@
         &__image
             max-width: 300px
             max-height: 300px
+        &__title
+            text-align: center
+            margin-top: 25px
     .sta
         padding-bottom: unset
-    .menu
-        padding-bottom: 50px
     .testimonial
         &__about
             justify-content: unset
@@ -289,14 +220,19 @@
                 margin-top: 30px
             &__image
                 max-width: unset
-                object-fit: cover
+        &-titles
+            &__title
+                font: 40px/120% 'Righteous', sans-serif
+                text-align: center
     .footer
         &__nav
             display: none
-        &__input
-            padding-left: 22px
-
-            width: 300px
+        &__link
+            &--back
+                display: block
+    .logo
+        width: 30px
+        height: 30px
 @media  ( max-width: 576px  )
     .container
         width: 85%
@@ -309,7 +245,7 @@
         &__title
             font: 37px/110% 'Righteous', sans-serif
         &__description
-            font: 500 12px/130% 'Urbanist', sans-serif
+            font: 500 14px/130% 'Urbanist', sans-serif
             margin-top: 20px
             margin-bottom: 30px
         &__play
@@ -319,13 +255,19 @@
             font: 700 12px/16px 'Inter', sans-serif
             padding: 12px
             max-width: 145px
-    .header
-        &__logo
-            width: 45px
+        &-thanks
+            &__button
+                width: 250px
+                padding: 15px
+            &__title
+                font: 34px/110% "Righteous",sans-serif
+    .navbar
+        &__link
+            font: 18px/26px "Inter",sans-serif
     .process
         padding-top: 40px
         &__title
-            font: 18px/30px 'Righteous', san-serif
+            font: 16px/18px 'Righteous', san-serif
         &__image
             max-height: 400px
     .history
@@ -346,18 +288,7 @@
         &__img
             max-height: 400px
             max-width: unset
-    .product
-        &-titles
-            &__title
-                font: 32px/130% 'Righteous', san-serif
-                text-align: center
-        &__button
-            padding: 20px 25px
-        &-item
-            &__button
-                padding: 15px
-            &__star
-                width: 20px
+    
     .action
         &__image
             max-height: 250px
@@ -368,27 +299,11 @@
         &__button
             font: 700 15px/17px 'Inter', san-serif
             padding: 20px
-    .menu
-        &-titles
-            &__title
-                font: 32px/130%'Righteous', san-serif
-                text-align: center
-        &-offer
-            &__item
-                flex-direction: column
-            &__text
-                flex-direction: column
-            &__image
-                margin-right: 0
-                width: 50%
-                margin-bottom: 15px
-            &__title
-                font: 18px/24px 'Righteous', san-serif
-            &__price
-                font: 600 14px/18px 'Urbanist', san-serif
+    
     .feedback
         padding-bottom: 50px
         &-titles
+            margin-top: 50px
             margin-bottom: 30px
             &__title
                 font: 32px/130% "Righteous",san-serif
@@ -403,12 +318,16 @@
                 font: 32px/130% "Righteous",san-serif
                 text-align: center
                 margin-bottom: 30px
+            &-subtitle
+                font: 600 14px/20px "Urbanist",sans-serif
         &__input
             &::placeholder
-                font: 600 12px/160% 'Urbanist', san-serif
+                font: 600 10px/160% 'Urbanist', san-serif
         &__button
             margin-top: 15px
             font: 700 15px/20px 'Inter', sans-serif
+        &__input
+            
     .testimonial
         padding-bottom: 50px
         &-titles
@@ -422,27 +341,8 @@
                 font: 16px/130% 'Righteous', san-serif
     .footer
         flex-wrap: wrap-reverse
-        &__input
-            height: 60px
-            padding-left: 12px
-            width: 100%
-            max-width: 200px
-            &:placeholder
-            font: 500 12px/150% 'Urbanist', san-serif
-            &-button
-                width: 35px
-                height: 35px
-        &__logo
-            width: 50px
-            margin-right: 15px
     .rights
         &__text
             font: 500 12px/150% 'Urbanist', san-serif
-@media  ( max-width: 320px  )
-    .footer
-        justify-content: center
-        &__input
-            max-width: 260px
-            width: 100%
-        &__logo
-            margin-top: 35px
+
+    

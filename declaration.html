@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ForestDocXML</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Righteous&family=Urbanist:wght@500;600&display=swap"
+            rel="preconnect"
+        />
+        <link rel="stylesheet" href="css/aos.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header class="header header-mobile--fixed">
+                <div class="header-wrapper">
+                  <img
+                  src="./img/logo.png"
+                  alt="Image: Logo"
+                  class="logo header__logo"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  />
+                  <a href="index.html" class="navbar__link navbar__link--hide"
+                          >Главная</a
+                      >
+                    <div class="navbar-menu">
+                        <span class="navbar-menu__line"></span>
+                        <span class="navbar-menu__line"></span>
+                        <span class="navbar-menu__line"></span>
+                    </div>
+                    <div class="navbar-mobile">
+                        <a href="index.html" class="navbar__link">Вернутся на главную</a>
+                    </div>
+                </div>
+            </header>
+        </header>
+        <div class="container">
+            <div class="booking">
+                <div
+                    class="booking__contact-form"
+                    data-aos="fade-bottom"
+                    data-aos-delay="300"
+                >
+                    <span class="block-subtitle booking__contact-subtitle"
+                        >Заполните поля</span
+                    >
+                    <h2 class="block-title booking__contact-title">
+                        Лесная декларация
+                    </h2>
+                    <form
+                        action="#"
+                        method="post"
+                        class="booking__form"
+                    >   
+                    <span class="block-subtitle booking__contact-subtitle"
+                        >Форма для общей информации о документе декларации:</span
+                    >
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Номер документа"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Дата документа"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Субъект РФ"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Лесничество"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Наименование органа государственной власти"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Период действия документа(дата начала)"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Период действия документа(дата конца)"
+                            required
+                        />
+                        <span class="block-subtitle booking__contact-subtitle"
+                        >Форма для ввода информации о лесопользователе:</span
+                    >
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Лесопользователь"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Подписант документа "
+                            required
+                        />
+                         <span class="block-subtitle booking__contact-subtitle"
+                        >Форма для ввода информации о договоре:</span>
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Наименование договора"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Дата заключения договора"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Срок действия договора(дата начала)"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Срок действия договора(дата конца)"
+                            required
+                        />
+                        <span class="block-subtitle booking__contact-subtitle"
+                        >Форма для ввода информации о видах использования лесных ресурсов и основании внесения изменений в лесную декларацию:</span>
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Виды использования лесов"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Основание внесения изменений в лесную декларацию"
+                            required
+                        />
+                        <span class="block-subtitle booking__contact-subtitle"
+                        >Форма для ввода информации о геоданных:</span>
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Система координат"
+                            required
+                        />
+                        <span class="block-subtitle booking__contact-subtitle"
+                        >Таблица «Объем использования лесов в целях заготовки древесины и (или) живицы», содержащая следующие поля:</span>
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Площадь эксплуатационная "
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Форма рубки"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Породный состав "
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Единица измерения"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Объем"
+                            required
+                        />
+                        <span class="block-subtitle booking__contact-subtitle"
+                        >Таблица «Создание (снос) объектов лесной инфраструктуры», содержащая следующие поля:</span> 
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Наименование объекта лесной инфраструктуры"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Номер объекта лесной инфраструктуры"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Объект мероприятия"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Местоположение"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Площадь объекта, га "
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Площадь рубки, га "
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Площадь эксплуатационная"
+                            required
+                        />
+                        <span class="block-subtitle booking__contact-subtitle"
+                        >Таблица «Объем использования лесов в целях, не связанных с заготовкой древесины и (или) живицы», содержащая следующие поля:</span>         
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Вид заготовляемых ресурсов"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Единица измерения"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Объем изъятия"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Площадь рубки, га"
+                            required
+                        />
+                        <span class="block-subtitle booking__contact-subtitle"
+                        >Таблица «Создание (снос) объектов лесной инфраструктуры, лесоперерабатывающей инфраструктуры и объектов, не связанных с созданием лесной инфраструктуры»</span> 
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Вид заготовляемых ресурсов"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Единица измерения"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Объем изъятия"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Площадь рубки, га"
+                            required
+                        />
+                        <span class="block-subtitle booking__contact-subtitle"
+                        >Таблица «Общая схема расположения мест проведения работ при использовании лесов в целях заготовки древесины», содержащая следующие поля:</span> 
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Масштаб"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Идентификатор вложения изображения схемы расположения лесосек или объектов инфраструктуры"
+                            required
+                        />
+                        <span class="block-subtitle booking__contact-subtitle"
+                        >Таблица «Схемы размещения лесосеки, объекта лесной инфраструктуры, объекта лесоперерабатывающей инфраструктуры и объекта, не связанного с созданием лесной инфраструктуры», содержащая следующие поля:</span> 
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Общая площадь, га "
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Площадь эксплуатационная"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Проводимая работа"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Привязка лесосеки (объекта) "
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Экспликация лесосеки (объекта) "
+                            required
+                        />
+                        <span class="block-subtitle booking__contact-subtitle"
+                        >Таблица «Сведения о расположении лесосек, объектов, приведенных на схеме(ах) размещения в приложении 4 к форме лесной декларации»</span> 
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Общая площадь, га "
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Площадь эксплуатационная"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Проводимая работа"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Привязка лесосеки (объекта) "
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Экспликация лесосеки (объекта) "
+                            required
+                        />
+                        <span class="block-subtitle booking__contact-subtitle"
+                        >Форма для вложений и их описания:</span> 
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Описание файлов вложений "
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Местоположение лесосеки (объекта) "
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Местоположение лесосеки (объекта) "
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Номер лесосеки (объекта)"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Номер начальной и конечной точек"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Направление линий,румбы (азимуты), град."
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="booking__input"
+                            placeholder="Длина линий,м "
+                            required
+                        />
+
+                        <button type="button" class="button booking__button">
+                            Отправить
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <!-- /.booking -->
+        </div>
+        <!-- /.container -->
+        <div class="rights">
+            <div class="container">
+                <div class="rights__block">
+                    <span class="rights__text"
+                        >ForestDocXML © 2023. Все права защищены.</span
+                    >
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./js/aos.js"></script>
+        <script src="./js/burger.js"></script>
+    </body>
+</html>
